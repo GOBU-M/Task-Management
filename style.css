@@ -1,0 +1,27 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom class for the dragging effect */
+        .dragging {
+            opacity: 0.5;
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        .task-column {
+            min-height: 200px; /* Ensures columns are droppable even when empty */
+        }
+        /* Style for the scrollbar to make it less obtrusive */
+        .task-list::-webkit-scrollbar {
+            width: 8px;
+        }
+        .task-list::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+        .task-list::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .task-list::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
